@@ -1,10 +1,12 @@
 /*****************************************************************************
- * DECOHack Patch File
- * Main
+ * gzprops - decohack - root
+ * (c) xaser acheron 2024
+ *     MIT License
  ****************************************************************************/
 
 #include <dsdhacked>
 #include <friendly>
 
-// Your DECOHack code here ...
+#include "defines.dh"
 
+#include "monsters/agitator.dh"

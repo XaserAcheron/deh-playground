@@ -1,0 +1,73 @@
+/*****************************************************************************
+ * gzprops - decohack - the agitator
+ * (c) xaser acheron 2024
+ *     MIT License
+ ****************************************************************************/
+
+thing Agitator "Agitator"
+{
+	//$Category Monsters
+	EdNum DOOMEDNUM_AGITATOR
+
+	Health        200
+	Speed         16
+	Radius        20
+	Height        56
+	ReactionTime  8
+	PainChance    50
+	Mass          500
+
+	SeeSound      "skesit"
+	PainSound     "skepai"
+	DeathSound    "skedth"
+
+	Tag           "THE AGITATOR"
+	Obituary      "%o won't see this message in normal gameplay, ha ha!"
+	MeleeObituary "%o got agitated."
+
+	+SOLID
+	+SHOOTABLE
+	+COUNTKILL
+
+	states
+	{
+		spawn:
+			SKEL ABCDEF 1 A_Look
+			loop
+		see:
+			SKEL K 20
+		walk:
+			SKEL A 0 A_PlaySound("skesit")
+		wrun:
+			SKEL ABCDEFABCDEFABCDEF 1 A_Chase
+			goto walk
+		melee:
+			SKEL G 0 A_FaceTarget
+			SKEL G 1 A_SkelWhoosh
+			SKEL H 1 A_FaceTarget
+			SKEL I 1 A_SkelFist
+			goto wrun
+		pain:
+			SKEL I 3
+			SKEL I 20 A_Pain
+			goto wrun
+		death:
+			SKEL LM 1
+			SKEL N 1 A_Scream
+			SKEL O 1 A_Fall
+			SKEL P 1
+			SKEL LM 1
+			SKEL N 1 A_Scream
+			SKEL O 1
+			SKEL LM 1
+			SKEL N 1 A_Scream
+			SKEL O 1
+			SKEL P 1
+			SKEL Q -1
+			stop
+		raise:
+			SKEL Q 20 A_PlaySound("skesit")
+			SKEL PONMLKJ 1
+			goto walk
+	}
+}

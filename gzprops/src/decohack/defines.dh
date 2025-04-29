@@ -1,0 +1,29 @@
+/*****************************************************************************
+ * gzprops - decohack - defines
+ * (c) xaser acheron 2024
+ *     MIT License
+ ****************************************************************************/
+
+//
+// properties
+//
+
+custom thing property ProjectilePassHeight "Projectile pass height" int
+custom thing property Tag "Tag" string
+custom thing property Obituary "Obituary" string
+custom thing property MeleeObituary "Melee obituary" string
+custom thing property SelfObituary "Self obituary" string
+
+
+//
+// declarations
+//
+
+auto thing Agitator {}
+
+
+//
+// doomednums
+//
+
+#define DOOMEDNUM_AGITATOR 3007
