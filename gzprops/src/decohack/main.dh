@@ -12,3 +12,5 @@
 #include "monsters/agitator.dh"
 
 #include "weapons/rocketlauncher.dh"
+
+#include "props/cone.dh"

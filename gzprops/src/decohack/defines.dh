@@ -8,7 +8,8 @@
 // properties
 //
 
-custom thing property ProjectilePassHeight "Projectile pass height" int
+custom thing property ProjectilePassHeight "Projectile pass height" fixed
+custom thing property PhysicalHeight "Physical height" fixed
 custom thing property Tag "Tag" string
 custom thing property Obituary "Obituary" string
 custom thing property MeleeObituary "Melee obituary" string
@@ -20,6 +21,7 @@ custom thing property SelfObituary "Self obituary" string
 //
 
 auto thing Agitator {}
+auto thing YeCone {}
 
 
 //
@@ -27,3 +29,4 @@ auto thing Agitator {}
 //
 
 #define DOOMEDNUM_AGITATOR 3007
+#define DOOMEDNUM_YE_CONE  3008

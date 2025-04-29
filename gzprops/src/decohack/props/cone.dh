@@ -1,0 +1,27 @@
+/*****************************************************************************
+ * gzprops - decohack - ye cone
+ * (c) xaser acheron 2024
+ *     MIT License
+ ****************************************************************************/
+
+thing YeCone "YE CONE"
+{
+	//$Category Monsters
+	EdNum DOOMEDNUM_YE_CONE
+
+	Radius               16
+	Height               16
+	PhysicalHeight       56
+	ProjectilePassHeight 16
+
+	Tag "YE CONE"
+
+	+SOLID
+
+	states
+	{
+		spawn:
+			SMT2 A -1
+			stop
+	}
+}
