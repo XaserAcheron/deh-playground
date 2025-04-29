@@ -1,14 +1,10 @@
 /*****************************************************************************
- * gzprops - decohack - root
+ * gzprops - decohack - rocket launcher
  * (c) xaser acheron 2024
  *     MIT License
  ****************************************************************************/
 
-#include <dsdhacked>
-#include <friendly>
-
-#include "defines.dh"
-
-#include "monsters/agitator.dh"
-
-#include "weapons/rocketlauncher.dh"
+thing MTF_ROCKET "Rocket"
+{
+	SelfObituary "%o is good at Doom."
+}
